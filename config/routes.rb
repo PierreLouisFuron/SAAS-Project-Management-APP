@@ -5,8 +5,13 @@ Rails.application.routes.draw do
   root to: "home#index"
 
   as(:user) do
-    match '/user/confirmation' => 'milia/confirmations#update', via: :put, as: :update_user_confirmation
+    match '/user/confirmation' => 'confirmations#update', via: :put, as: :update_user_confirmation
   end
 
-  devise_for(:users)
+  devise_for :users, :controllers => {
+    :confirmations => "confirmations",
+    :registrations => "registrations"
+    # :sessions => "XXXX",
+    # :passwords => "XXX" 
+  }
 end

@@ -3,8 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.1"
 
-gem 'acts_as_tenant'
 gem 'devise'
+gem 'devise-bootstrap-views'
+gem 'font-awesome-rails'
 
 gem 'bootstrap'
 
