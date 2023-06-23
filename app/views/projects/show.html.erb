@@ -1,5 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
 <%# <%= render @project %> 
 <div>
 <%# <div id="<%= dom_id project %>
@@ -25,8 +23,13 @@
   </table>
 </div>
 
+<p>
+  <h3>Artifacts</h3>
+  <%= render 'artifacts/list', artifacts: @project.artifacts %>
+</p>
+
 <div class="d-flex">
     <%= link_to "< Back to Organization Home", root_path, class:"btn btn-outline-primary me-2" %>
-    <%= link_to "Edit this project", edit_tenant_project_path(@project, tenant: @project.tenant_id), class:"btn btn-outline-primary me-2" %>
+    <%= link_to "Edit this project", edit_tenant_project_path(project: @project, tenant: @project.tenant_id), class:"btn btn-outline-primary me-2" %>
     <%= button_to "Destroy this project", tenant_project_path(@project, tenant_id: @project.tenant_id), method: :delete, class:"btn btn-outline-danger" %>
 </div>

@@ -9,6 +9,9 @@ gem 'font-awesome-rails'
 
 gem 'bootstrap'
 
+# gem 'aws-sdk'
+gem 'aws-sdk-s3'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
