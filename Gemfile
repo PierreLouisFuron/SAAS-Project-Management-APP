@@ -7,6 +7,9 @@ gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'font-awesome-rails'
 
+gem 'stripe'
+gem 'jquery-rails'
+
 gem 'bootstrap'
 
 # gem 'aws-sdk'
