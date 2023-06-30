@@ -40,7 +40,6 @@ $(function () {
         }
         
         if( plan_type === 'premium') {
-            // $('[data-stripe]').prop('required', true);
             $('[data-stripe]').attr('required', true)
             $form.off('submit');
             $form.on('submit', submitHandler);

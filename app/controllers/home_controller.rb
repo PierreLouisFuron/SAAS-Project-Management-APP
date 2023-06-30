@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     if current_user
       @user = current_user
       @tenant = current_tenant
-      @projects = Project.by_plan_and_tenant(@tenant.id)
+      @projects = Project.by_user_plan_and_tenant(@tenant.id, current_user)
       
       # @users = Array(current_tenant&.users)
 

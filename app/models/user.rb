@@ -7,6 +7,8 @@ class User < ApplicationRecord
     #, :confirmable
     has_one :member, :dependent => :destroy
     has_and_belongs_to_many :tenants
+    has_many :user_projects
+    has_many :projects, through: :user_projects
 
     def is_admin?
         is_admin
