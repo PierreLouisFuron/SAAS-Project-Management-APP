@@ -1,24 +1,6 @@
-# README
+# SAAS Project Management App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my take on the SAAS Project Management App from the Udemy course "The Complete Ruby On Rails Developer Course". 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Contrary to the course, it based on Rails 7 and I am not using Milia not any other outdated gem. 
+All the multi-tenancy features have been added manually. 
